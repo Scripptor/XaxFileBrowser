@@ -212,7 +212,7 @@ namespace XaxFileBrowser
                     DirectoryInfo dir = new DirectoryInfo(dirPath);
                     Icon icon = SystemIcons.WinLogo;
 
-                    ListViewItem dirItem = new ListViewItem(dir.Name + "/");
+                    ListViewItem dirItem = new ListViewItem(dir.Name + "\\");
                     dirItem.SubItems.Add("Directory");
                     dirItem.SubItems.Add(dir.LastWriteTime.ToString());
                     dirItem.Group = directoryGroup;
